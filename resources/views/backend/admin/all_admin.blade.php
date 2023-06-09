@@ -2,20 +2,20 @@
 @section('admin')
     <div class="page-content">
         <!--breadcrumb-->
-        <div class="page-breadcrumb d-none d-sm-flex align-items-center mb-3">
-            <div class="breadcrumb-title pe-3">جميع المسؤولين</div>
+        <div class="mb-3 page-breadcrumb d-none d-sm-flex align-items-center">
+            <div class="breadcrumb-title pe-3">جميع مستخدمين</div>
             <div class="ps-3">
                 <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb mb-0 p-0">
+                    <ol class="p-0 mb-0 breadcrumb">
                         <li class="breadcrumb-item"><a href="javascript:;"><i class="bx bx-home-alt"></i></a>
                         </li>
-                        <li class="breadcrumb-item active" aria-current="page">جميع المسؤولين</li>
+                        <li class="breadcrumb-item active" aria-current="page">جميع مستخدمين</li>
                     </ol>
                 </nav>
             </div>
             <div class="ms-auto">
                 <div class="btn-group">
-                    <a href="{{ route('add.admin') }}" class="btn btn-primary">اضف مسؤول</a>
+                    <a href="{{ route('add.admin') }}" class="btn btn-primary">اضف مستخدم</a>
                 </div>
             </div>
         </div>
