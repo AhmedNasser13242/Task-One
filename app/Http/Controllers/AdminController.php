@@ -158,7 +158,12 @@ public function AdminDestroy(Request $request){
 
 
     public function AdminUserUpdate(Request $request,$id){
-
+        $request->validate([
+            'name' => 'required|max:255',
+            'email' => 'required|max:255',
+            'password' => 'required',
+            'role' => 'required|max:255',
+        ]);
 
         $user = User::findOrFail($id);
         $user->username = $request->username;
