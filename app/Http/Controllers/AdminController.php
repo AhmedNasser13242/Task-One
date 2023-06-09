@@ -116,6 +116,13 @@ public function AdminDestroy(Request $request){
 
     public function AdminUserStore(Request $request){
 
+         $request->validate([
+            'name' => 'required|max:255',
+            'email' => 'required|max:255',
+            'password' => 'required',
+            'role' => 'required|max:255',
+        ]);
+
         $user = new User();
         $user->username = $request->username;
         $user->name = $request->name;
