@@ -132,7 +132,7 @@ public function AdminDestroy(Request $request){
         }
 
          $notification = array(
-            'message' => 'New Admin User Inserted Successfully',
+            'message' => 'New  User Inserted Successfully',
             'alert-type' => 'success'
         );
 
@@ -166,7 +166,7 @@ public function AdminDestroy(Request $request){
 
 
          $notification = array(
-            'message' => 'New Admin User Updated Successfully',
+            'message' => ' User Updated Successfully',
             'alert-type' => 'success'
         );
 
@@ -183,7 +183,7 @@ public function AdminDestroy(Request $request){
         }
 
          $notification = array(
-            'message' => 'Admin User Deleted Successfully',
+            'message' => ' User Deleted Successfully',
             'alert-type' => 'success'
         );
 
